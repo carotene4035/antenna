@@ -1,7 +1,7 @@
 <div id="page-wrapper">
   <div class="row">
     <div class="col-lg-12">
-      <h1 class="page-header">ブログ一覧</h1>
+      <h1 class="page-header">記事一覧</h1>
     </div>
     <!-- /.col-lg-12 -->
   </div>
@@ -9,29 +9,27 @@
   <div class="row">
     <div class="col-lg-12">
       <div class="panel panel-default">
-        <div class="panel-heading">ブログ一覧</div>
+        <div class="panel-heading">記事一覧</div>
         <!-- /.panel-heading -->
         <div class="panel-body">
           <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
             <thead>
               <tr>
-                <th>ブログid</th>
+                <th>記事名</th>
                 <th>ブログ名</th>
-                <th>説明</th>
-                <th>最終更新日 </th>
+                <th>最終更新日</th>
               </tr>
             </thead>
             <tbody>
-                <% @blogs.each do |blog| %>
+                <% @entries.each do |entry| %>
                   <tr class="">
-                    <td><%= blog.id %></td>
                     <td>
-                      <%= link_to blog.link, target: "_blank" do %>
-                        <%= blog.name %>
+                      <%= link_to entry.link, target: "_blank" do %>
+                        <%= entry.title %>
                       <% end %>
                     </td>
-                    <td><%= blog.description %></td>
-                    <td><%= blog.latest_entry_published_at %></td>
+                    <td><%= entry.blog.name %></td>
+                    <td><%= entry.published_at %></td>
                   </tr>
                 <% end %>
             </tbody>

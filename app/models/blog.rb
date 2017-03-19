@@ -1,3 +1,3 @@
 class Blog < ActiveRecord::Base
-    belongs_to :entries
+    has_many :entries
 end

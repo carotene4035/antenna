@@ -28,10 +28,19 @@
                 <!-- /.nav-second-level -->
             </li>
             <li>
-                <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
+              <%= link_to admin_blogs_path do %>
+                <i class="fa fa-table fa-fw"></i> ブログ一覧
+              <% end %>
             </li>
             <li>
-                <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+              <%= link_to new_admin_blog_path do %>
+                <i class="fa fa-table fa-fw"></i> ブログ新規登録
+              <% end %>
+            </li>
+            <li>
+              <%= link_to admin_entries_path do %>
+                <i class="fa fa-table fa-fw"></i> 記事一覧
+              <% end %>
             </li>
             <li>
                 <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
