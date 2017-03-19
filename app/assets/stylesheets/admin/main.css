@@ -1,0 +1,12 @@
+.container-margin {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+h3.title {
+    font-style: italic;
+    display: inline-block;
+}
+.tool-section {
+    margin-bottom: 30px;
+}

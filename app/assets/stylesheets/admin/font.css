@@ -1,0 +1,11 @@
+.fa {
+    padding-right: 7px;
+}
+.dropable {
+    height: 48px;
+    width: 227px;
+    border: 2px dotted gray;
+}
+p.img-file-name {
+    margin: 0 0 0px;
+}
